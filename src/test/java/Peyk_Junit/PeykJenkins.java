@@ -252,7 +252,7 @@ public class PeykJenkins extends Driver {
         peyk_pages.donemIslemleri.click();
         BrowserUtils.waitFor(2);
         String ucBordDonIslemText = peyk_pages.ucBordDonIslem.getText();
-        Assert.assertEquals(ucBordDonIslemText, "Ücret Bordrosu Dönem İşlemleri");
+        Assert.assertEquals(ucBordDonIslemText, "Ücret Bordrosu Dönem İşlemler");
         BrowserUtils.waitFor(1);
 
         closeDriver();
