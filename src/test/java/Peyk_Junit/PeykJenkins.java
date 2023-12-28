@@ -20,7 +20,7 @@ public class PeykJenkins extends Driver {
         BrowserUtils.waitFor(2);
         String bordroYukle = peyk_pages.ucretBordrosuYuk.getText();
         Assert.assertEquals(bordroYukle,"Ücret Bordrosu Yükle");
-        BrowserUtils.waitFor(2);
+        BrowserUtils.waitFor(3);
 
         //Form
         peyk_pages.anaSayfa.click();
