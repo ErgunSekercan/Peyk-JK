@@ -221,7 +221,7 @@ public class PEYK_Pages {
     @FindBy(xpath = "(//i[@class= \" fa fa fa-upload\"])[5]")
     public WebElement ozlukKirmiziAliBoz;
 
-    @FindBy(xpath = "//label[@class= \"btn\"]")
+    @FindBy(xpath = "//input[@id=\"files\"]")
     public WebElement dosyalariSec;
 
     @FindBy(xpath = "(//div[@class= \" css-1hwfws3\"])[1]")

@@ -492,6 +492,7 @@ public class PeykJenkins extends Driver {
         BrowserUtils.waitFor(3);
         peyk_pages.ozlukKirmiziAliBoz.click();
         BrowserUtils.waitFor(3);
+        //peyk_pages.dosyalariSec.click();
         peyk_pages.dosyalariSec.sendKeys("C:\\Users\\Kolaysoft\\IdeaProjects\\PEYK_Jenkins yeni\\aaron-burden-b9drVB7xIOI-unsplash.jpg");
         BrowserUtils.waitFor(3);
         peyk_pages.seciniz1.sendKeys("Özlük Formu");
