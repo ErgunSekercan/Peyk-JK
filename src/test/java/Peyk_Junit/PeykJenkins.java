@@ -488,6 +488,34 @@ public class PeykJenkins extends Driver {
         String genelDurum = peyk_pages.genelDurumRaporu.getText();
         Assert.assertEquals(genelDurum,"Genel Durum Raporu İndir");
         BrowserUtils.waitFor(2);
+        peyk_pages.sayfa2.click();
+        BrowserUtils.waitFor(1);
+        peyk_pages.ozlukKirmiziAliBoz.click();
+        BrowserUtils.waitFor(1);
+        peyk_pages.dosyalariSec.sendKeys("C:\\Users\\Kolaysoft\\IdeaProjects\\PEYK_Jenkins yeni\\aaron-burden-b9drVB7xIOI-unsplash.jpg");
+        BrowserUtils.waitFor(1);
+        peyk_pages.seciniz1.sendKeys("Özlük Formu");
+        peyk_pages.seciniz2.click();
+        peyk_pages.seciniz2.sendKeys("Fotoğraf Satırı");
+        peyk_pages.kaydetOzluk.click();
+        BrowserUtils.waitFor(1);
+        peyk_pages.degistir.click();
+        BrowserUtils.waitFor(3);
+        peyk_pages.basarili.isDisplayed();
+        peyk_pages.tamam.click();
+        BrowserUtils.waitFor(1);
+        peyk_pages.ozlukMaviButtonAliBoz.click();
+        peyk_pages.seciniz.sendKeys("Özlük Formu");
+        peyk_pages.duzenle.click();
+        peyk_pages.fotografDosyaSec.sendKeys("C:\\Users\\Kolaysoft\\IdeaProjects\\PEYK_Jenkins yeni\\Ali Boz-87197540786.pdf");
+        peyk_pages.evet.click();
+        peyk_pages.basarili.isDisplayed();
+
+
+
+
+
+
 
         JavascriptExecutor js = (JavascriptExecutor) getDriver();
         js.executeScript("arguments[0].scrollIntoView(true);",peyk_pages.PEYK);

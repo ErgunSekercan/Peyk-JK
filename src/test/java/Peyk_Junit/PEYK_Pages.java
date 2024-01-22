@@ -215,6 +215,45 @@ public class PEYK_Pages {
     @FindBy(xpath = "//span[contains(text(), \" Özlük Dosyaları\")]")
     public WebElement ozlukDosyalari;
 
+    @FindBy(xpath = "//a[contains(text(), \"2\")]")
+    public WebElement sayfa2;
+
+    @FindBy(xpath = "(//i[@class= \" fa fa fa-upload\"])[5]")
+    public WebElement ozlukKirmiziAliBoz;
+
+    @FindBy(xpath = "//label[@class= \"btn\"]")
+    public WebElement dosyalariSec;
+
+    @FindBy(xpath = "(//div[@class= \" css-1hwfws3\"])[1]")
+    public WebElement seciniz1;
+
+    @FindBy(xpath = "(//div[@class= \" css-1hwfws3\"])[2]")
+    public WebElement seciniz2;
+
+    @FindBy(xpath = "//span[contains(text(), \"Kaydet\")]")
+    public WebElement kaydetOzluk;
+
+    @FindBy(xpath = "//button[contains(text(), \"EKLE\")]")
+    public WebElement ekle;
+
+    @FindBy(xpath = "//button[contains(text(), \"DEĞİŞTİR\")]")
+    public WebElement degistir;
+
+    @FindBy(xpath = "//h2[@id=\"swal2-title\"]")
+    public WebElement basarili;
+
+    @FindBy(xpath = "(//i[@class=\" fa fa fa-edit\"])[5]")
+    public WebElement ozlukMaviButtonAliBoz;
+
+    @FindBy(xpath = "//div[@id=\"react-select-13--value\"]")
+    public WebElement seciniz;
+
+    @FindBy(xpath = "//button[contains(text(),\"Düzenle\")]")
+    public WebElement duzenle;
+
+    @FindBy(xpath = "//button[contains(text(),\"Fotoğraf veya Dosya Seç \")]")
+    public WebElement fotografDosyaSec;
+
     @FindBy(xpath = "//button[@label='Özlük İndir']")
     public WebElement ozlukIndir;
 
