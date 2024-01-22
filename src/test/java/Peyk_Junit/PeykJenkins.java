@@ -433,7 +433,7 @@ public class PeykJenkins extends Driver {
 
         Driver.getDriver().get("https://peyktest.kolaysoft.com.tr/accounting/login");
         peyk_pages.TcNo.sendKeys("admin_004329");
-        peyk_pages.sifre.sendKeys("Ab,12345");
+        peyk_pages.sifre.sendKeys("Ac,12345");
         peyk_pages.giris.click();
         BrowserUtils.waitFor(5);
 
