@@ -3,6 +3,7 @@ import org.junit.Assert;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 
 public class PeykJenkins extends Driver {
     PEYK_Pages peyk_pages = new PEYK_Pages();
@@ -208,7 +209,7 @@ public class PeykJenkins extends Driver {
 
         peyk_pages.donem.click();
         BrowserUtils.waitFor(2);
-        peyk_pages.tem.click();
+        peyk_pages.oca.click();
         peyk_pages.evet.click();
         BrowserUtils.waitFor(3);
 
@@ -496,27 +497,28 @@ public class PeykJenkins extends Driver {
         peyk_pages.dosyalariSec.sendKeys("C:\\Users\\Kolaysoft\\IdeaProjects\\PEYK_Jenkins yeni\\aaron-burden-b9drVB7xIOI-unsplash.jpg");
         BrowserUtils.waitFor(3);
         peyk_pages.seciniz1.sendKeys("Özlük Formu");
-        peyk_pages.seciniz2.click();
+        peyk_pages.seciniz1.sendKeys(Keys.ENTER);
+        BrowserUtils.waitFor(3);
         peyk_pages.seciniz2.sendKeys("Fotoğraf Satırı");
+        peyk_pages.seciniz2.sendKeys(Keys.ENTER);
         peyk_pages.kaydetOzluk.click();
         BrowserUtils.waitFor(1);
         peyk_pages.degistir.click();
+        BrowserUtils.waitFor(5);
+        peyk_pages.basarili.isDisplayed();
+        peyk_pages.tamam.click();
+        BrowserUtils.waitFor(3);
+        peyk_pages.ozlukMaviButtonAliBoz.click();
+        BrowserUtils.waitFor(3);
+        peyk_pages.ozlukFormu.sendKeys("Özlük Formu" + Keys.ENTER);
+        BrowserUtils.waitFor(5);
+        peyk_pages.duzenle.click();
+        peyk_pages.dosyaSec.sendKeys("C:\\Users\\Kolaysoft\\IdeaProjects\\PEYK_Jenkins yeni\\clement-fusil-Fpqx6GGXfXs-unsplash.jpg");
+        peyk_pages.kaydet2.click();
+        peyk_pages.evet.click();
         BrowserUtils.waitFor(3);
         peyk_pages.basarili.isDisplayed();
         peyk_pages.tamam.click();
-        BrowserUtils.waitFor(1);
-        peyk_pages.ozlukMaviButtonAliBoz.click();
-        peyk_pages.seciniz.sendKeys("Özlük Formu");
-        peyk_pages.duzenle.click();
-        peyk_pages.fotografDosyaSec.sendKeys("C:\\Users\\Kolaysoft\\IdeaProjects\\PEYK_Jenkins yeni\\Ali Boz-87197540786.pdf");
-        peyk_pages.evet.click();
-        peyk_pages.basarili.isDisplayed();
-
-
-
-
-
-
 
         JavascriptExecutor js = (JavascriptExecutor) getDriver();
         js.executeScript("arguments[0].scrollIntoView(true);",peyk_pages.PEYK);

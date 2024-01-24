@@ -224,10 +224,10 @@ public class PEYK_Pages {
     @FindBy(xpath = "//input[@id=\"files\"]")
     public WebElement dosyalariSec;
 
-    @FindBy(xpath = "(//div[@class= \" css-1hwfws3\"])[1]")
+    @FindBy(xpath = "//input[@id=\"react-select-2-input\"]")
     public WebElement seciniz1;
 
-    @FindBy(xpath = "(//div[@class= \" css-1hwfws3\"])[2]")
+    @FindBy(xpath = "//input[@id=\"react-select-3-input\"]")
     public WebElement seciniz2;
 
     @FindBy(xpath = "//span[contains(text(), \"Kaydet\")]")
@@ -245,11 +245,17 @@ public class PEYK_Pages {
     @FindBy(xpath = "(//i[@class=\" fa fa fa-edit\"])[5]")
     public WebElement ozlukMaviButtonAliBoz;
 
-    @FindBy(xpath = "//div[@id=\"react-select-13--value\"]")
-    public WebElement seciniz;
+    @FindBy(xpath = "//input[@aria-activedescendant=\"react-select-22--value\"]")
+    public WebElement ozlukFormu;
 
     @FindBy(xpath = "//button[contains(text(),\"Düzenle\")]")
     public WebElement duzenle;
+
+    @FindBy(xpath = "(//input[@type=\"file\"])[1]")
+    public WebElement dosyaSec;
+
+    @FindBy(xpath = "//button[@label=\"Kaydet\"]")
+    public WebElement kaydet2;
 
     @FindBy(xpath = "//button[contains(text(),\"Fotoğraf veya Dosya Seç \")]")
     public WebElement fotografDosyaSec;
@@ -365,8 +371,8 @@ public class PEYK_Pages {
     @FindBy(xpath = "(//input)[2]")
     public WebElement donem;
 
-    @FindBy(xpath = "//td[contains(text(), \"Tem\")]")
-    public WebElement tem;
+    @FindBy(xpath = "//td[contains(text(), \"Oca\")]")
+    public WebElement oca;
 
     @FindBy(xpath = "//button[contains(text(), \"Evet\")]")
     public WebElement evet;
