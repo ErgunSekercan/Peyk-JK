@@ -274,8 +274,32 @@ public class PEYK_Pages {
     @FindBy(xpath = "//h4[contains(text(), \"Rol Listesi\")]")
     public WebElement rolListesi;
 
+    @FindBy(xpath = "//button[@label=\"Rol Oluştur\"]")
+    public WebElement rolOlustur;
+
+    @FindBy(xpath = "//input[@name=\"roleName\"]")
+    public WebElement rolAdi;
+
     @FindBy(xpath = "//span[contains(text(), \" Rol Atama\")]")
     public WebElement rolAtama;
+
+    @FindBy(xpath = "(//i[@class=\" fa fa-plus\"])[1]")
+    public WebElement rolAtaAliPaksoy;
+
+    @FindBy(xpath = "(//input[@aria-expanded=\"false\"])[5]")
+    public WebElement rolSec;
+
+    @FindBy(xpath = "//button[contains(text(),\"Ekle\")]")
+    public WebElement ekle1;
+
+    @FindBy(xpath = "//button[@title=\"Sil\"]")
+    public WebElement calisanRolSil;
+
+    @FindBy(xpath = "//span[contains(text(),\"×\")]")
+    public WebElement x;
+
+    @FindBy(xpath = "(//button[@title=\"Sil\"])[1]")
+    public WebElement rolSil;
 
     @FindBy(xpath = "//h4[contains(text(), \"Personel Listesi\")]")
     public WebElement personelListesi;

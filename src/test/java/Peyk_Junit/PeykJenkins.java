@@ -540,12 +540,36 @@ public class PeykJenkins extends Driver {
         String rolListesi = peyk_pages.rolListesi.getText();
         Assert.assertEquals(rolListesi,"Rol Listesi");
         BrowserUtils.waitFor(2);
+        peyk_pages.rolOlustur.click();
+        peyk_pages.rolAdi.sendKeys("Rol");
+        peyk_pages.kaydet.click();
+        BrowserUtils.waitFor(2);
+        peyk_pages.basarili.isDisplayed();
+        peyk_pages.tamam.click();
+        BrowserUtils.waitFor(2);
 
         peyk_pages.rolAtama.click();
         BrowserUtils.waitFor(2);
         String personelListesi = peyk_pages.personelListesi.getText();
         Assert.assertEquals(personelListesi,"Personel Listesi");
         BrowserUtils.waitFor(2);
+        peyk_pages.rolAtaAliPaksoy.click();
+        peyk_pages.rolSec.sendKeys("Rol" + Keys.ENTER);
+        peyk_pages.ekle1.click();
+        peyk_pages.evet.click();
+        peyk_pages.basarili.isDisplayed();
+        peyk_pages.tamam.click();
+        BrowserUtils.waitFor(5);
+        peyk_pages.calisanRolSil.click();
+        peyk_pages.evet.click();
+        peyk_pages.basarili.isDisplayed();
+        peyk_pages.tamam.click();
+        peyk_pages.x.click();
+        peyk_pages.rolOlusturma.click();
+        peyk_pages.rolSil.click();
+        peyk_pages.evet.click();
+        peyk_pages.basarili.isDisplayed();
+        peyk_pages.tamam.click();
 
     }
     @Test
